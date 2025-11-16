@@ -1,8 +1,4 @@
-provider "aws" {
-  access_key = "***"
-  secret_key = "***"
-  region     = "eu-central-1"
-}
+provider "aws" {}
 
 resource "aws_instance" "ubuntu-instance" {
   count         = 2
@@ -12,5 +8,9 @@ resource "aws_instance" "ubuntu-instance" {
 
 resource "aws_instance" "aws-ubuntu-instance" {
   ami           = "ami-089a7a2a13629ecc4"
-  instance_type = "t3.micro"
+  instance_type = "t3.small"
+
+  tags = {
+    Name = "aws server t3.small"
+  }
 }

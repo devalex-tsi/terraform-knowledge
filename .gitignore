@@ -1,6 +1,6 @@
 accesses.txt/accesses.txt
 /.vs
-/1/.terraform/providers/registry.terraform.io/hashicorp/aws/6.21.0/windows_386
-/1/.terraform.lock.hcl
-/1/terraform.tfstate
-/1/terraform.tfstate.backup
+**/.terraform/
+**/.terraform.lock.hcl
+**/terraform.tfstate
+**/terraform.tfstate.backup
